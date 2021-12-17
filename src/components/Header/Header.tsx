@@ -9,15 +9,15 @@ import Stats from './icons/stats.svg?tsx';
 export const Header = () => {
     return <header className='header'>
         <div className="container">
-            <div>
+            <div className='header__container'>
                 <div>
-                    <Link to='/'>
+                    <Link className='header__link' to='/'>
                         <Logo/>
                         pomodoro_box
                     </Link>
                 </div>
                 <div>
-                    <Link to='/statistic'>
+                    <Link className='header__link' to='/statistic'>
                         <Stats/>
                         Статистика
                     </Link>

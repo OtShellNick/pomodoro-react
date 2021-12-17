@@ -19,15 +19,42 @@
   font-weight: 700;
 }
 
+$bodyBackground: #FFFFFF;
+$linkColor: #DC3E22;
+$linkHover: #B7280F;
+$startButton: #A8B64F;
+$startButtonHover: #899441;
+$stopButton: transparent;
+$stopButtonHover: $linkColor;
+$plus: #C4C4C4;
+$plusHover: $startButtonHover;
+$chartColor: #EA8979;
+$chartColorHover: #EE735D;
+$chartColorActive: #DC3E22;
+$dropDownMenuHover: #F4F4F4;
+$timerHeader: $plus;
+$timerBackground: $dropDownMenuHover;
+$timeFocus: #FFDDA9;
+$timePause: #DFDCFE;
+$timeStops: #C5F1FF;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: $linkColor;
+  transition: color .3s linear;
+}
+
 body {
+  height: 100vh;
   font-family: "SF UI Display", serif;
   font-weight: 400;
+  background-color: $bodyBackground;
 }
 
 .container {

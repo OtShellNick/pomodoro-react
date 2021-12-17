@@ -1,1 +1,44 @@
 @import "../App";
+
+.tomato_svg__tomato {
+  transition: fill .3s linear;
+}
+
+.stats_svg__stats {
+  transition: fill .3s linear;
+}
+
+.header {
+  box-shadow: 0 10px 63px rgba(0, 0, 0, 0.07);
+  margin-bottom: 100px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: $linkHover;
+    }
+
+    &:hover .tomato_svg__tomato {
+      fill: $linkHover;
+    }
+
+    &:hover .stats_svg__stats {
+      fill: $linkHover;
+    }
+
+    & svg {
+      margin-right: 10px;
+    }
+  }
+}
+

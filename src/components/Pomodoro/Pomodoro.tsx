@@ -1,10 +1,14 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+
+import {InstructionList} from "@components/Pomodoro/components/InstructionList";
 
 import './Pomodoro.scss';
 
 export const Pomodoro = () => {
-    return <div>pomodoro
-        <Link to='/statistic'>Stat</Link>
-    </div>
+    return <section className='pomodoro'>
+        <div className="pomodoro__left">
+            <InstructionList/>
+        </div>
+        <div className="right"></div>
+    </section>
 }

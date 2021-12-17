@@ -10,9 +10,11 @@ import {Statistic} from "@components/Staristic";
 export const App = () => {
     return <>
         <Header/>
-        <Routes>
-            <Route path="/" element={<Pomodoro/>}/>
-            <Route path="/statistic" element={<Statistic/>}/>
-        </Routes>
+        <main className='container'>
+            <Routes>
+                <Route path="/" element={<Pomodoro/>}/>
+                <Route path="/statistic" element={<Statistic/>}/>
+            </Routes>
+        </main>
     </>
 }
