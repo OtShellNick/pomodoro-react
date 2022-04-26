@@ -1,8 +1,14 @@
 @import '../App';
 
 .pomodoro {
+  display: flex;
+  justify-content: space-between;
 
   &__left {
     width: 530px;
+  }
+
+  &__right {
+    width: 733px;
   }
 }
