@@ -1,0 +1,28 @@
+@import '../../../App';
+
+.task-form {
+
+  &__input {
+    padding: 19px 231px 19px 15px;
+    margin-bottom: 25px;
+    background-color: $dropDownMenuHover;
+    border: none;
+    outline: none;
+    color: $formText;
+    font-size: 16px;
+    font-weight: 300;
+
+    &::placeholder {
+      color: $formPlaceholder;
+    }
+  }
+
+  &__add {
+    padding: 19px 50px;
+    background-color: $startButton;
+    border: none;
+    color: $bodyBackground;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
