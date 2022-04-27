@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import './TaskForm.scss';
 import { addTaskAction, IRootState } from '../../../../store';
+import {Button} from "@components/Button/Button";
 
 export function TaskForm() {
   const dispatch = useDispatch();
@@ -29,12 +30,9 @@ export function TaskForm() {
         onChange={(e) => setTask(e.target.value)}
         value={formik.values.task}
       />
-      <button
-        className="task-form__add"
-        type="submit"
-      >
-        Добавить
-      </button>
+      <Button
+      text='Добавить'
+      type="ACTIVE"/>
     </form>
   );
 }

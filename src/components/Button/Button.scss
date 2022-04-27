@@ -1,0 +1,36 @@
+@import '../App';
+
+.btn {
+  padding: 19px 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: $bodyBackground;
+  border: none;
+  cursor: pointer;
+  transition: background-color .2s linear;
+}
+
+.active {
+  background-color: $startButton;
+
+  &:hover {
+    background-color: $startButtonHover;
+  }
+}
+
+.disabled {
+  border: 2px solid $plus;
+  color: $plus;
+  background-color: transparent;
+}
+
+.stop {
+  color: $stopButtonHover;
+  background-color: transparent;
+  border: 2px sold $stopButtonHover;
+
+  &:hover {
+    color: $bodyBackground;
+    background-color: $stopButtonHover
+  }
+}

@@ -1,4 +1,5 @@
 @import '../../../App';
+
 .timer {
   background-color: $dropDownMenuHover;
 
@@ -23,6 +24,7 @@
       margin-right: 25px;
       font-size: 150px;
       font-weight: 200;
+      line-height: 179px;
     }
 
     &__add {
@@ -38,6 +40,27 @@
     &_flex {
       display: flex;
       align-items: center;
+    }
+
+    &__task {
+      display: flex;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 32px;
+
+      &_task {
+        color: $formPlaceholder;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+
+      &_margin {
+        margin-right: 30px;
+      }
     }
   }
 }
